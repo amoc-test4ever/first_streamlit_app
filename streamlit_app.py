@@ -6,3 +6,5 @@ st.text('🥣 Omega 3 and Blueberry oat Meal')
 st.text('🥗 kale spianch and Rocket Smoothis')
 st.text('🐔 Hard-boled free range Egg')
 st.text('🥑🍞 Avacado Toast')
+
+st.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
