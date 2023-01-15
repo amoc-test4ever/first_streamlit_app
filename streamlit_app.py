@@ -42,7 +42,8 @@ import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("SELECT * from fruit_load_list")
+#my_cur.execute("SELECT * from fruit_load_list")
+my_cur.execute("insert into fruit_load_list values ('from st')")
 my_data_rows = my_cur.fetchall()
 st.header("The fruit load list contains:")
 st.dataframe(my_data_rows)
@@ -51,4 +52,4 @@ st.dataframe(my_data_rows)
 add_my_fruit = st.text_input('What fruit would you like to add?','jackfruit')
 st.write('The user entered ', add_my_fruit)
 
-my_cur.execute("insert into fruit-load_list values ('from st')")
+
