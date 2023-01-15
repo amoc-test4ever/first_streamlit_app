@@ -35,7 +35,7 @@ try:
    fruit_choice = st.text_input('What fruit would you like information about?')
    if not fruit_choice:
       st.error("Please select  a fruit to get information")
-      else:
+   else:
          fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice )
          fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
          st.dataframe(fruityvice_normalized)
