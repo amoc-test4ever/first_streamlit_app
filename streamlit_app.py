@@ -39,19 +39,16 @@ try:
          fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice )
          fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
          st.dataframe(fruityvice_normalized)
+expect URLError as e:
+    st.error()
    
 #st.write('The user entered ', fruit_choice)
-
-
 # st.text(fruityvice_response)
-
 # write your own comment -what does the next line do? 
-
 # write your own comment - what does this do?
 
 
-expect URLError as e:
-   st.error()
+
 
 st.stop()
 
